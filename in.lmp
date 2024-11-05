@@ -1,0 +1,26 @@
+atom_style atomic
+boundary p p p
+units metal
+
+# First three basis atoms - SI, others - O
+# Crystallographic data from https://next-gen.materialsproject.org/materials/mp-6930
+lattice custom 4.92 a1 1.0 0.0 0.0 a2 -0.5 0.0 -0.866025 a3 0.0 1.103659 0.0 &
+                    basis 0.00000000  0.33333333  0.46879823 &
+                    basis 0.53120177  0.00000000  0.53120177 &
+                    basis 0.46879823  0.66666667  0.00000000 &
+                    basis 0.14453836  0.54781960  0.73143979 &
+                    basis 0.58690143  0.88115293  0.85546164 &
+                    basis 0.26856021  0.21448627  0.41309857 &
+                    basis 0.41309857  0.78551373  0.26856021 &
+                    basis 0.85546164  0.11884707  0.58690143 &
+                    basis 0.73143979  0.45218040  0.14453836 &
+                    triclinic/general
+                    
+create_box 2 NULL 0 3 0 3 0 3
+create_atoms 1 box basis 1 1 basis 2 1 basis 3 1 basis 4 2 basis 5 2 basis 6 2 basis 7 2 basis 8 2 basis 9 2
+
+mass 1 28.085   # Silicon
+mass 2 15.999   # Oxygen
+
+write_data data.lmpdat
+
