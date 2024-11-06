@@ -45,12 +45,12 @@ mass 2 15.999   # Oxygen
 #           Si      OB      OH      H       OM      Si-OB
 #   q       1.600   -0.800  -0.800  0.400   -1.000  N/A
 #   sigma   1.425   1.570   1.470   0.891   1.470   2.995
-#   epsilon 0.0130  0.0113  0.0065  0.00091 0.0065  0.0325
+#   epsilon 0.0130  0.0113  0.0065  0.00091 0.0065  0.0121
 
 pair_style lj/cut/coul/long 10.0
 pair_coeff 1 1 0.0130 1.425        # epsilon, sigma for Si-Si
 pair_coeff 2 2 0.0113 1.570        # epsilon, sigma for OB-OB
-pair_coeff 1 2 0.0325 2.995        # epsilon, sigma for Si-OB
+pair_coeff 1 2 0.0121 2.995        # epsilon, sigma for Si-OB
 set type 1 charge 1.600            # q for Si
 set type 2 charge -0.800           # q for O
 kspace_style pppm 1.0e-4
