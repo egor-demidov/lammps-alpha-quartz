@@ -3,4 +3,9 @@
 !*.lmp
 !.gitignore
 !*.xlsx
-
+!*.yace
+!*.reax
+!lmp_control/
+!ace/
+!meissner/
+!reaxff/
